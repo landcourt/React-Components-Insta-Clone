@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+// eslint-disable-next-line
 /* 
   Start here and work your way down the nested components.
   Not all files in the project need code added.
@@ -5,10 +7,18 @@
 */
 
 // Import the state hook
-import React from 'react';
+
+import React, { useState } from 'react'
+
 // Import the Posts (plural!) and SearchBar components, since they are used inside App component
+
+import Posts from './components/Posts/Posts'
+import SearchBar from './components/SearchBar/SearchBar'
+
 // Import the dummyData
-import './App.css';
+
+import dummyData from './dummy-data'
+import './App.css'
 
 const App = () => {
   // Create a state called `posts` to hold the array of post objects, **initializing to dummyData**.
